@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def main():
     book_path = 'github.com/Angel21-ctrl-Z/bookbot/books/frankenstein.txt'
     text = get_book_text(book_path)
@@ -44,3 +45,5 @@ def get_book_text(path):
         return f.read()
 
 main()
+=======
+>>>>>>> 1e56de0 (B: m_main.py)
