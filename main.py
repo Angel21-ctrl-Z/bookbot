@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 def main():
     book_path = 'github.com/Angel21-ctrl-Z/bookbot/books/frankenstein.txt'
     text = get_book_text(book_path)
@@ -7,7 +6,6 @@ def main():
     chars_sort = chars_sorted_ls(chars_dict)
     print(f"--- Begin report of {book_path} ---")
     print(f"{num_words} words found in the document")
-    print()
 
     for item in chars_sort:
         if not item["char"].isalpha():
@@ -45,5 +43,3 @@ def get_book_text(path):
         return f.read()
 
 main()
-=======
->>>>>>> 1e56de0 (B: m_main.py)
