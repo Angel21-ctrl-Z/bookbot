@@ -4,14 +4,20 @@ def main():
     n_w = len(text.split())
     c_d = char_dict(text)
     char_ls = chars_sorted_ls(c_d)
+    create = open('github.com/Angel21-ctrl-Z/bookbot/output.txt', 'w')
+    create.write(f" --- Begin report of {file} ---" + '\n')
+    create.write(f"{n_w} words found in the document" + '\n')
     print(f" --- Begin report of {file} ---")
     print(f"{n_w} words found in the document")
     
     for item in char_ls:
         if not item["char"].isalpha():
             continue
+        create.write(f"The '{item['char']} character was found {item['num']} times" + '\n')
         print(f"The '{item['char']} character was found {item['num']} times")
+    create.write("--- End report ---")
     print("--- End report ---")
+    print(" --- saved results ---")
 
 def sort_on(d):
     return d["num"]
